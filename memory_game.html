@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Memory Game</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <main>
+        <h1>Memory Game</h1>
+        <div class="main-container">
+            <h3>Game of Memory</h3>
+
+            <div class="first-div">
+                <div class="first-image">
+                    <img src="image/1.jpg" alt="banana-img" />
+                    <img src="image/2.jpg" alt="grape-img" />
+                    <img src="image/3.jpg" alt="orange-img" />
+                    <img src="image/4.jpg" alt="strawberry-img" />
+                    <img src="image/5.jpg" alt="apple-img" />
+                    <img src="image/6.jpg" alt="avacado-img" />
+                    <img src="image/7.jpg" alt="dragonfruit-img" />
+                    <img src="image/8.jpg" alt="pineapple-img" />
+                </div>
+                <div class="inner-div">
+                    <label>Pairs Found</label><br />
+                    <input type="text"  id="pairs" disabled value="0"/>
+                </div>
+            </div>
+            <div class="second-div">
+                <div class="second-image flip-container">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="image/cancel.png" alt="grape-img" />
+
+                        </div>
+                        <div class="back">
+                            <img src="image/1.jpg" alt="apple-img" />
+                        </div>
+                    </div>
+                    <div class="flipper" >
+                        <div class="front">
+                            <img src="image/cancel.png" alt="grape-img" />
+                        </div>
+                        <div class="back">
+
+                            <img src="image/2.jpg" alt="avacado-img" />
+                        </div>
+                    </div>
+                    <div class="flipper" >
+                        <div class="front">
+                            <img src="image/cancel.png" alt="grape-img" />
+                        </div>
+                        <div class="back">
+
+                            <img src="image/3.jpg" alt="banana-img" />
+                        </div>
+                    </div>
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="image/cancel.png" alt="grape-img" />
+                        </div>
+                        <div class="back">
+
+                            <img src="image/4.jpg" alt="dragonfruit-img" />
+                        </div>
+                    </div>
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="image/cancel.png" alt="grape-img" />
+
+                        </div>
+                        <div class="back">
+                            <img src="image/5.jpg" alt="grape-img" />
+                        </div>
+                    </div>
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="image/cancel.png" alt="grape-img" />
+
+                        </div>
+                        <div class="back">
+                            <img src="image/6.jpg" alt="orange-img" />
+                        </div>
+                    </div>
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="image/cancel.png" alt="grape-img" />
+
+                        </div>
+                        <div class="back">
+                            <img src="image/7.jpg" alt="pineapple-img" />
+                        </div>
+                    </div>
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="image/cancel.png" alt="grape-img" />
+
+                        </div>
+                        <div class="back">
+                            <img src="image/8.jpg" alt="strawberry-img" />
+                        </div>
+                    </div>
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="image/cancel.png" alt="grape-img" />
+
+                        </div>
+                        <div class="back">
+                            <img src="image/1.jpg" alt="apple-img" />
+                        </div>
+                    </div>
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="image/cancel.png" alt="grape-img" />
+
+                        </div>
+                        <div class="back">
+                            <img src="image/2.jpg" alt="avacado-img" />
+                        </div>
+                    </div>
+                    <div class="flipper" >
+                        <div class="front">
+                            <img src="image/cancel.png" alt="grape-img" />
+
+                        </div>
+                        <div class="back">
+                            <img src="image/3.jpg" alt="banana-img" />
+                        </div>
+                    </div>
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="image/cancel.png" alt="grape-img" />
+
+                        </div>
+                        <div class="back">
+                            <img src="image/4.jpg" alt="dragonfruit-img" />
+                        </div>
+                    </div>
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="image/cancel.png" alt="grape-img" />
+
+                        </div>
+                        <div class="back">
+                            <img src="image/5.jpg" alt="grape-img" />
+                        </div>
+                    </div>
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="image/cancel.png" alt="grape-img" />
+                        </div>
+                        <div class="back">
+                            <img src="image/6.jpg" alt="orange-img" />
+                        </div>
+                    </div>
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="image/cancel.png" alt="grape-img" />
+                        </div>
+                        <div class="back">
+                            <img src="image/7.jpg" alt="pineapple-img" />
+                        </div>
+                    </div>
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="image/cancel.png" alt="grape-img" />
+                        </div>
+                        <div class="back">
+                            <img src="image/8.jpg" alt="strawberry-img" />
+                        </div>
+                    </div>
+                </div>
+                <div class="second-inner-div">
+                    <label>Time</label><br />
+                    <input type="text" id="time"/><br />
+                    <label>Best Score</label><br />
+                    <input type="text"  id="score"/>
+                </div>
+                <div class="btn">
+                    <button id="start_button">STOP</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/game.js"></script>
+</body>
+
+</html>
